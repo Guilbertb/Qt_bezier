@@ -19,6 +19,7 @@ signals:
 public slots:
     void OnEffacer();
     void OnConstruire(bool);
+    void mousePressEvent(QMouseEvent *event);
 };
 
 #endif // BZVIEW_H

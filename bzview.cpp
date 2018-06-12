@@ -13,4 +13,7 @@ void BzView::OnConstruire(bool)
 {
 }
 
+void BzView::mousePressEvent(QMouseEvent *event) //surcharge de mousePressEvent
+{
 
+}
