@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BzMainWindow</class>
+ <widget class="QMainWindow" name="BzMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BzMainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="BzView" name="View" native="true">
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Fichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <addaction name="action_Nouveau"/>
+    <addaction name="action_Charger"/>
+    <addaction name="action_Sauvegarder"/>
+    <addaction name="action_Quitter"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tools">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="action_Effacer"/>
+    <addaction name="action_Construire"/>
+   </widget>
+   <addaction name="menu_Fichier"/>
+   <addaction name="menu_Tools"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Nouveau"/>
+   <addaction name="action_Quitter"/>
+   <addaction name="action_Charger"/>
+   <addaction name="action_Sauvegarder"/>
+   <addaction name="action_Effacer"/>
+   <addaction name="action_Construire"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Nouveau">
+   <property name="icon">
+    <iconset resource="bzmainwindows.qrc">
+     <normaloff>:/icones/images/new.png</normaloff>:/icones/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Nouveau</string>
+   </property>
+  </action>
+  <action name="action_Quitter">
+   <property name="icon">
+    <iconset resource="bzmainwindows.qrc">
+     <normaloff>:/icones/images/Quit.png</normaloff>:/icones/images/Quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+Q</string>
+   </property>
+  </action>
+  <action name="action_Charger">
+   <property name="icon">
+    <iconset resource="bzmainwindows.qrc">
+     <normaloff>:/icones/images/open.png</normaloff>:/icones/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Charger</string>
+   </property>
+  </action>
+  <action name="action_Sauvegarder">
+   <property name="icon">
+    <iconset resource="bzmainwindows.qrc">
+     <normaloff>:/icones/images/save.png</normaloff>:/icones/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Sauvegarder</string>
+   </property>
+  </action>
+  <action name="action_Effacer">
+   <property name="icon">
+    <iconset resource="bzmainwindows.qrc">
+     <normaloff>:/icones/images/Redo.png</normaloff>:/icones/images/Redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Effacer</string>
+   </property>
+  </action>
+  <action name="action_Construire">
+   <property name="icon">
+    <iconset resource="bzmainwindows.qrc">
+     <normaloff>:/icones/images/BezierConstruct.png</normaloff>:/icones/images/BezierConstruct.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Construire</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BzView</class>
+   <extends>QWidget</extends>
+   <header>bzview.h</header>
+   <container>1</container>
+   <slots>
+    <slot>OnEffacer()</slot>
+    <slot>OnConstruire(bool)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="bzmainwindows.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action_Effacer</sender>
+   <signal>triggered()</signal>
+   <receiver>View</receiver>
+   <slot>OnEffacer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Construire</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>View</receiver>
+   <slot>OnConstruire(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
