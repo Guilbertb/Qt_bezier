@@ -2,6 +2,8 @@
 #define BZVIEW_H
 
 #include <QWidget>
+#include <QMouseEvent>
+#include <QDebug>
 
 #define NBPTS 4
 
