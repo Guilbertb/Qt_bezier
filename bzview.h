@@ -19,6 +19,8 @@ public:
 
     int m_NbPoints=0;
     QPoint m_Points[NBPTS];
+    int m_CapturedPoint=-1;
+
 
 signals:
 
@@ -26,7 +28,7 @@ public slots:
     void OnEffacer();
     void OnConstruire(bool);
     void mousePressEvent(QMouseEvent *event);
-    int m_CapturedPoint=-1;
+
 };
 
 #endif // BZVIEW_H
