@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QMouseEvent>
+#include <QPaintEvent>
 #include <QDebug>
 
 #define NBPTS 4
@@ -10,6 +11,7 @@
 class BzView : public QWidget
 {
     Q_OBJECT
+    void paintEvent(QPaintEvent *event);
 public:
     explicit BzView(QWidget *parent = nullptr);
 
