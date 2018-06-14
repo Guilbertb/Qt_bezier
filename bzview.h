@@ -7,6 +7,8 @@
 #include <QDebug>
 
 #define NBPTS 4
+#define PTSIZE 6
+#define PTWITDH 2
 
 class BzView : public QWidget
 {
@@ -24,6 +26,7 @@ public slots:
     void OnEffacer();
     void OnConstruire(bool);
     void mousePressEvent(QMouseEvent *event);
+    int m_CapturedPoint=-1;
 };
 
 #endif // BZVIEW_H
